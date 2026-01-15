@@ -10,7 +10,8 @@
 #include "./bitmap_loader.h"
 
 #pragma comment(lib, "gdi32.lib")
-
+extern unsigned char g_img[];
+extern __int64 g_imgLen;
 enum ZBID
 {
 	ZBID_DEFAULT = 0,
@@ -573,5 +574,6 @@ BOOL IsWindowsVersionOrGreater(
 		VER_SERVICEPACKMAJOR | VER_SERVICEPACKMINOR,
 		condition_mask);
 }
+
 
 
