@@ -11,8 +11,6 @@
 
 #pragma comment(lib, "gdi32.lib")
 
-extern const unsigned char g_img[];
-extern const __int64 g_imgLen;
 enum ZBID
 {
 	ZBID_DEFAULT = 0,
@@ -575,4 +573,5 @@ BOOL IsWindowsVersionOrGreater(
 		VER_SERVICEPACKMAJOR | VER_SERVICEPACKMINOR,
 		condition_mask);
 }
+
 
