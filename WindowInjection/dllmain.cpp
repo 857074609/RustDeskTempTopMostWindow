@@ -6,7 +6,7 @@
 #include <memory>
 #include <type_traits>
 
-#include "./img.h"
+#include "inject_image.h"
 #include "./bitmap_loader.h"
 
 #pragma comment(lib, "gdi32.lib")
@@ -572,6 +572,7 @@ BOOL IsWindowsVersionOrGreater(
 		VER_SERVICEPACKMAJOR | VER_SERVICEPACKMINOR,
 		condition_mask);
 }
+
 
 
 
