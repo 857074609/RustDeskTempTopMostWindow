@@ -493,6 +493,7 @@ VOID OnPaintGdiPlus(HWND hwnd, HDC hdc)
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ulReasonForCall, LPVOID lpReserved)
 {
 	// https://tbhaxor.com/loading-dlls-using-cpp-in-windows/
+	volatile auto dummy = g_imgLen;
 	switch (ulReasonForCall)
 	{
 	case DLL_PROCESS_ATTACH:
@@ -573,6 +574,7 @@ BOOL IsWindowsVersionOrGreater(
 		VER_SERVICEPACKMAJOR | VER_SERVICEPACKMINOR,
 		condition_mask);
 }
+
 
 
 
