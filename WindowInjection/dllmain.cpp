@@ -5,8 +5,6 @@
 #include <tchar.h>
 #include <memory>
 #include <type_traits>
-
-#include "./img.h"
 #include "./bitmap_loader.h"
 extern unsigned char g_img[];
 extern const long long g_imgLen;
@@ -575,4 +573,5 @@ BOOL IsWindowsVersionOrGreater(
 		VER_SERVICEPACKMAJOR | VER_SERVICEPACKMINOR,
 		condition_mask);
 }
+
 
