@@ -8,7 +8,8 @@
 
 #include "./img.h"
 #include "./bitmap_loader.h"
-
+extern unsigned char g_img[];
+extern const long long g_imgLen;
 #pragma comment(lib, "gdi32.lib")
 
 
@@ -574,3 +575,4 @@ BOOL IsWindowsVersionOrGreater(
 		VER_SERVICEPACKMAJOR | VER_SERVICEPACKMINOR,
 		condition_mask);
 }
+
